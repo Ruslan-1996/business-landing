@@ -1,0 +1,556 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "FS Emeric Extra", sans-serif;
+}
+
+*::selection {
+    background: #7ad7ff; 
+   }
+
+.width-content  {
+    width: 60%;
+}
+
+#first-screen {
+    background: url(img/first-screen.jpg) no-repeat ;  
+    float: left;
+    width: 100%;
+    height: 672px;
+}
+
+
+
+#first-screen header{
+    background-color: rgba(10, 10, 24, 0.85);
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+#first-screen header .in-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#first-screen header .in-header .logo h2 {
+    color: white;
+}
+
+#first-screen header .in-header .logo h2 .color-text{
+    color: #009DDF;
+}
+
+#first-screen header .in-header .about-us a{
+    margin-left: 40px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#first-screen header .in-header .about-us .end-about-us{
+    margin-left: 0;
+}
+
+
+#first-screen header .in-header .about-us a:hover{
+    color: #009DDF;
+} 
+
+#first-screen #content {
+    width: 100%;
+    height: 612px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#first-screen #content .text-content h1 {
+    
+    color: #009DDF;
+    text-transform: uppercase;
+}
+
+#first-screen #content .text-content h1 .color-text{
+    color:rgb(10, 10, 24);
+}
+
+#first-screen #content .text-content p {
+    margin: 8vh 0 1vh 0;
+    color:rgb(10, 10, 24);
+    font-weight: bold;
+}
+
+#first-screen #content .text-content ul li {
+    margin-bottom: 1vh;
+    color:rgb(10, 10, 24);
+}
+
+#first-screen #content .text-content ul{
+    margin-bottom: 8vh;
+}
+
+#first-screen #content .text-content button{
+    height: 32px;
+    width: 186px;
+    border-radius: 3px;
+    outline: none;
+    text-transform: uppercase;
+}
+
+#first-screen #content .text-content .button-blue {
+    border: 1px solid white;
+    background-color: #009DDF;
+    color: white;
+    margin-right: 30px;
+}
+
+#first-screen #content .text-content .button-blue:active{
+    background-color:#006693;
+}
+
+#first-screen #content .text-content .button-white {
+    border: 1px solid rgb(10, 10, 24);
+    background-color: white;
+    color: :rgb(10, 10, 24);
+    color: rgb(10, 10, 24);
+   
+}
+
+#first-screen #content .text-content .button-white:active{
+    background-color: #B8B8BD;
+}
+
+#second-screen {
+    background: url(img/second-screen.jpg)no-repeat;
+    width: 100%;
+    height: 672px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#second-screen .text-content h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 550;
+}
+
+#second-screen .text-content h1 .text-blue {
+    color: #009DDF;
+}
+
+#second-screen .text-content p {
+    text-align: center;
+    color: #B8B8BD;
+    margin-top: 10px;
+}
+
+#second-screen .text-content .row {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    float: left;
+    margin-top: 50px;
+    margin-left: 2.5%;
+}
+
+#second-screen .text-content .row .content-circle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#second-screen .text-content .row .content-circle .circle{
+    height: 80px;
+    width: 80px;
+    background-color: #009DDF;
+    border: 5px solid #006693;
+    border-radius: 10000px;
+    display: flex;
+}
+
+#second-screen .text-content .row .content-circle .circle p {
+    margin: auto;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+}
+
+#second-screen .text-content .row .content-circle .circle .dollar {
+    height: 20px;
+    width: 35px;
+    border: 3px solid white;
+    margin: auto;
+    display: flex;
+}
+
+#second-screen .text-content .row .content-circle .circle .dollar p {
+    margin: auto;
+    background-color: white;
+    height: 14px;
+    width: 10px;
+    font-size: 12px;
+    color: #009DDF;
+    font-weight: bold;
+    border-radius: 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#second-screen .text-content .row .content-circle .circle img {
+    height: 1.2em;
+}
+
+#second-screen .text-content .row .content-circle .circle .post{
+    font-size: 2.5em;
+}
+
+#second-screen .text-content .row .content-circle .text-under-row{
+    width: 100%;
+}
+
+#second-screen .text-content .row .small-circle {
+    height: 5px;
+    width: 5px;
+    color: #B8B8BD;
+    border-radius: 100px;
+    background-color: #B8B8BD;
+    margin: auto;
+}
+
+#second-screen .text-content .row .content-circle p {
+    color: white;
+    margin-bottom: -5px;
+}
+
+#second-screen .text-content .inputs {
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    float: left;
+}
+
+#second-screen .text-content .inputs .in-input select, input{
+    width: 17vw;
+    height: 40px;
+    border-radius: 3px;
+}
+
+#second-screen .text-content .inputs .in-input input {
+    background-color: #B8B8BD;
+    color: rgb(10, 10, 24);
+    outline: none;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+#second-screen .text-content .input-error {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#second-screen .text-content .input-error p{
+    color:red;
+}
+
+#second-screen .text-content .range_and_file{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#second-screen .text-content .range_and_file .range{
+    width: 65.8%;
+    float: left;
+}
+
+#second-screen .text-content .range_and_file .range .text-on-range{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#second-screen .text-content .range_and_file .range .text-on-range p {
+    color: white;
+}
+
+#second-screen .text-content .range_and_file .range .text-on-range .interest{
+    display: flex;
+}
+
+#second-screen .text-content .range_and_file .range input{
+    -webkit-appearance: none;
+    background-color: #B8B8BD;
+    border: 1px solid black;
+    border-radius: 100px;
+    width: 100%;
+    height: 7px;
+    outline: none;
+    cursor: pointer;
+}
+
+
+#second-screen .text-content .range_and_file .range input::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background-color: #009DDF;
+    border: 3px solid #006693;
+    border-radius: 100px;
+    width: 20px;
+    height: 20px;
+    transition: 0.25s;
+}
+
+#second-screen .text-content .range_and_file .range input::-webkit-slider-thumb:hover, 
+#second-screen .text-content .range_and_file .range input::-webkit-slider-thumb:active{
+    width: 22px;
+    height: 22px;
+    border: 4px solid #006693;
+}
+
+#second-screen .text-content .range_and_file .range input::-moz-range-track{
+    -moz-appearance: none;
+    background-color: #B8B8BD;
+    border: 1px solid black;
+    border-radius: 100px;
+    width: 100%;
+    height: 7px;
+    outline: none;
+    cursor: pointer;
+}
+
+#second-screen .text-content .range_and_file .range input::-moz-range-thumb{
+    -moz-appearance: none;
+    background-color: #009DDF;
+    border: 3px solid #006693;
+    border-radius: 100px;
+    width: 14px;
+    height: 14px;
+    transition: 0.25s;
+}
+
+#second-screen .text-content .range_and_file .range input::-moz-range-thumb:hover, 
+#second-screen .text-content .range_and_file .range input::-moz-range-thumb:active{
+    width: 16px;
+    height: 16px;
+    border: 4px solid #006693;
+}
+
+
+
+#second-screen .text-content .range_and_file .file #file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+#second-screen .text-content .range_and_file .file label{
+    padding: 10px 3.5vw 10px 3.5vw;
+    color: rgb(10, 10, 24);
+    background-color: white;
+    border: 1px solid rgb(10, 10, 24);
+    border-radius: 3px;
+    cursor: pointer;
+    outline: none;
+}
+
+
+
+#second-screen .text-content .button {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#second-screen .text-content .button button {
+    width: 280px;
+    height: 40px;
+    background-color: #009DDF;
+    border: 1px solid white;
+    border-radius: 3px;
+    color: white;
+    font-size: 0.8em;
+    outline: none;
+}
+
+#second-screen .text-content .button button:active{
+    background-color:#006693;
+}
+
+#second-screen .text-content .range_and_file .file label img{
+    height: 1em;
+}
+
+footer {
+    background-color: #393E50;
+    float: left;
+    height: 60px;
+    width: 100%;
+    position: relative;
+    font-size: 0.73em;
+    display: flex;
+    justify-content: center;
+}
+
+footer .in-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .in-footer p {
+    float: left;
+    margin-right: 25px;
+    color: #B8B8BD;
+}
+
+footer .in-footer .name-site .big-string {
+    text-transform: uppercase;
+}
+
+footer .in-footer .name-site {
+    color: white;
+}
+
+footer img {
+    height: 0.8em;
+}
+
+footer .in-footer .logo-post {
+    color: #009DDF;
+}
+
+footer .in-footer p .logo-VK {
+    color: #009DDF;
+    font-size: 1.2em;
+    font-weight: bold;
+} 
+
+footer .in-footer .vk {
+    margin-right: 0;
+}
+
+footer .in-footer hr {
+    display: none;
+}
+
+@media only screen and (max-width:1225px){
+  
+    .width-content{
+        width: 80%;
+    }
+
+    #first-screen header .in-header .about-us a{
+        margin-left: 30px;
+    }
+
+    #second-screen .text-content .range_and_file .file label{
+        padding: 10px 3vw 10px 3vw;
+    }
+
+    footer .in-footer {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}
+
+@media only screen and (max-width:769px){
+
+    #first-screen header{
+        height: 100px;
+        align-items: center;
+    }
+
+    #first-screen header .in-header{
+        width: 90%;
+        flex-direction: column;
+    }
+
+    #first-screen header .in-header .about-us{
+        margin-top: 10px;
+    }
+
+    #first-screen #content .text-content .button-blue {
+       
+        margin-bottom: 10px;
+    }
+
+    #second-screen {
+        background: url(img/second-screen.jpg) 0 0/auto no-repeat;
+        height: 762px;
+    }
+
+    #second-screen .text-content .inputs {
+        margin-top: 48px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #second-screen .text-content .inputs .in-input select, input{
+        width: 70vw;
+        margin-top: 7px;
+    }
+
+    #second-screen .text-content .range_and_file{
+        flex-direction: column;
+    }
+
+    #second-screen .text-content .range_and_file .range{
+        width: 70vw;
+        float: left;
+        margin-bottom: 15px;
+    }
+    #second-screen .text-content .range_and_file .file label{
+        padding: 10px 20vw 10px 20vw;
+    }
+
+    #second-screen .text-content .button button {
+        width: 70vw;
+    }
+
+    #second-screen .text-content .range_and_file .range .text-on-range{
+        margin: 0;
+    }
+
+    #second-screen .text-content .input-error {
+        justify-content: center;
+    }
+
+    footer{
+        height: 140px;
+    }
+
+    footer .in-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    footer .in-footer .footer-line{
+        display: none;
+    }
+
+    footer .in-footer hr{
+        display: block;
+        border: none;
+        height: 1px;
+        width: 70vw;
+        background-color: #B8B8BD;
+        margin: 5px 0 5px 0;
+    }
+}
