@@ -11,7 +11,7 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" />
     <link href="https://www.favicon.by/ico/5fcfe348d6ba0.ico" rel="shortcut icon" type="image/x-icon" />
     <title>My project</title>
-    <script src="js/buttonFile.js"></script>
+    
 </head>
 
 <body>
@@ -50,70 +50,79 @@
         <div class="text-content  width-content">
             <h1>Оформление <span class="text-blue">заказа</span></h1>
             <p>Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
-            <div class="row">
-                <div class="circle">
-                    <p><img src="https://img.icons8.com/android/96/ffffff/search.png" /></p>
+            <div class="row-and-text">
+                <div class="row">
+                    <div class="circle">
+                        <p><img src="https://img.icons8.com/android/96/ffffff/search.png" /></p>
+                    </div>
+                    <div class="small-circle"></div>
+                    <div class="small-circle"></div>
+                    <div class="small-circle"></div>
+                    <div class="small-circle"></div>
+                    <div class="circle">
+                        <p>%</p>
+                    </div>
+                    <div class="small-circle"></div>
+                    <div class="small-circle"></div>
+                    <div class="small-circle"></div>
+                    <div class="small-circle"></div>
+                    <div class="circle">
+                        <p><img src="https://img.icons8.com/windows/96/ffffff/shared-document.png" /></p>
+                    </div>
+                    <div class="small-circle"></div>
+                    <div class="small-circle"></div>
+                    <div class="small-circle"></div>
+                    <div class="small-circle"></div>
+                    <div class="circle">
+                        <p class="post">&#9993</p>
+                    </div>
+                    <div class="small-circle"></div>
+                    <div class="small-circle"></div>
+                    <div class="small-circle"></div>
+                    <div class="small-circle"></div>
+                    <div class="circle">
+                        <div class="dollar">
+                            <p>1</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="small-circle"></div>
-                <div class="small-circle"></div>
-                <div class="small-circle"></div>
-                <div class="small-circle"></div>
-                <div class="circle">
-                    <p>%</p>
-                </div>
-                <div class="small-circle"></div>
-                <div class="small-circle"></div>
-                <div class="small-circle"></div>
-                <div class="small-circle"></div>
-                <div class="circle">
-                    <p><img src="https://img.icons8.com/windows/96/ffffff/shared-document.png" /></p>
-                </div>
-                <div class="small-circle"></div>
-                <div class="small-circle"></div>
-                <div class="small-circle"></div>
-                <div class="small-circle"></div>
-                <div class="circle">
-                    <p class="post">&#9993</p>
-                </div>
-                <div class="small-circle"></div>
-                <div class="small-circle"></div>
-                <div class="small-circle"></div>
-                <div class="small-circle"></div>
-                <div class="circle">
-                    <div class="dollar">
-                        <p>1</p>
+                <div class="text-row">
+                    <div class="text-under-row text-under-row-first">
+                        <p>Lorem ipsum dolor</p>
+                        <p>sit amet</p>
+                    </div>
+                    <div class="text-under-row">
+                        <p>Consecteturadipiscing elit</p>
+                    </div>
+                    <div class="text-under-row">
+                        <p>Sed do eiusmod tempor</p>
+                    </div>
+                    <div class="text-under-row">
+                        <p>Esse cillum dolore</p>
+                        <p>eu fugiat</p>
+                    </div>
+                    <div class="text-under-row text-under-row-end">
+                        <p>Excepteur sint occaecat</p>
+                        <p>cupidatat non proident</p>
                     </div>
                 </div>
             </div>
-            <div class="text-row">
-                <div class="text-under-row">
-                    <p>Lorem ipsum dolor</p>
-                    <p>sit amet</p>
-                </div>
-                <div class="text-under-row">
-                    <p>Consecteturadipiscing elit</p>
-                </div>
-                <div class="text-under-row">
-                    <p>Sed do eiusmod tempor</p>
-                </div>
-                <div class="text-under-row">
-                    <p>Esse cillum dolore</p>
-                    <p>eu fugiat</p>
-                </div>
-                <div class="text-under-row">
-                    <p>Excepteur sint occaecat</p>
-                    <p>cupidatat non proident</p>
-                </div>
-            </div>
             <div class="inputs">
-                <div class="in-input"><select name="">
-                        <option value="">Выберите тип системы</option>
-                        <option value="">Sed ut perspiciatis</option>
-                        <option value="">Nemo enim ipsam</option>
-                        <option value="">Et haeym quidem</option>
-                        <option value="">Temporibus autem</option>
-                        <option value="">Itaque earum rerum</option>
-                    </select>
+                <div class="in-input">
+                    <div class="select is-active">
+                        <div class="select-header">
+                            <span class="select-current">Выберите тип системы</span>
+                            <div class="select-icon">&times</div>
+                        </div>
+                        <div class="select-body">
+                            <div class="select-item">Выберите тип системы</div>
+                            <div class="select-item">Sed ut perspiciatis</div>
+                            <div class="select-item">Nemo enim ipsam</div>
+                            <div class="select-item">Et haeym quidem</div>
+                            <div class="select-item">Temporibus autem</div>
+                            <div class="select-item">Itaque earum rerum</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="in-input">
                     <input type="email" placeholder="Ваш e-mail" id="email">
@@ -151,18 +160,20 @@
         <div class="in-footer width-content">
             <p class="name-site">© 2018 <span class="big-string">"Loremipsun.net"</span> Все права защищены.</p>
             <p class="footer-line">|</p>
-            <hr/>
+            <hr />
             <p><img src="https://img.icons8.com/ios-filled/100/4a90e2/qiwi.png" /> Qiwi wallet</p>
             <p><img src="https://img.icons8.com/ios-filled/100/4a90e2/yandex-money.png" /> Yandex money</p>
             <p><img src="https://www.flaticon.com/svg/static/icons/svg/825/825522.svg"> Web money</p>
             <p class="footer-line">|</p>
-            <hr/>
+            <hr />
             <p><span class="logo-post">&#9993</span> info@ipsum228.com</p>
             <p class="vk"><span class="logo-VK">В</span> Мы вконтакте</p>
         </div>
     </footer>
 </body>
-
+<script src="js/select.js"></script>
+<script src="js/buttonFile.js"></script>
 <script src="js/script.js"></script>
+
 
 </html>
