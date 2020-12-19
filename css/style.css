@@ -5,7 +5,7 @@
 }
 
 *::selection {
-    background: #7ad7ff; 
+    background: #7ad7ff;
    }
 
 .width-content  {
@@ -13,13 +13,11 @@
 }
 
 #first-screen {
-    background: url(../img/first-screen.jpg) no-repeat ;  
+    background: url(../img/first-screen.jpg) no-repeat center;
     float: left;
     width: 100%;
     height: 672px;
 }
-
-
 
 #first-screen header{
     background-color: rgba(10, 10, 24, 0.85);
@@ -86,13 +84,14 @@
     font-weight: bold;
 }
 
+#first-screen #content .text-content ul{
+    margin-bottom: 8vh;
+}
+
 #first-screen #content .text-content ul li {
     margin-bottom: 1vh;
     color:rgb(10, 10, 24);
-}
-
-#first-screen #content .text-content ul{
-    margin-bottom: 8vh;
+    list-style-type: none;
 }
 
 #first-screen #content .text-content button{
@@ -127,7 +126,7 @@
 }
 
 #second-screen {
-    background: url(../img/second-screen.jpg)no-repeat;
+    background: url(../img/second-screen.jpg) no-repeat center;
     width: 100%;
     height: 672px;
     display: flex;
@@ -236,7 +235,7 @@
 }
 
 #second-screen .text-content .inputs .select {
-    width: 250px;
+    width: 18.5vw;
     margin: 0 auto;
     position: relative;
 }
@@ -259,13 +258,25 @@
 
 #second-screen .text-content .inputs .select-icon {
     display: flex;
-    align-items: center;
     flex-shrink: 0;
     justify-content: center;
     height: 40px;
     margin-left: auto;
     text-align: center;
     width: 40px;
+}
+
+#second-screen .text-content .inputs .select-icon i {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    border-radius: 2px;
+}
+
+#second-screen .text-content .inputs .select-icon .arrow-down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 #second-screen .text-content .inputs .select-body {
@@ -276,7 +287,6 @@
     right: 0;
     top: 100%;
     display: block;
-    z-index: 1;
 }
 
 #second-screen .text-content .inputs .select-item {
@@ -290,14 +300,7 @@
     color: #009DDF;
 }
 
-#second-screen .text-content .inputs .cube{
-    height: 40px;
-    width: 100%;
-    background-color: black;
-    z-index: 0;
-}
-
-#second-screen .text-content .inputs .in-input select, input{
+#second-screen .text-content .inputs .in-input input{
     width: 18.5vw;
     height: 40px;
     border-radius: 3px;
@@ -380,7 +383,7 @@
 #second-screen .text-content .range_and_file .range input::-moz-range-track{
     -moz-appearance: none;
     background-color: #B8B8BD;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 100px;
     width: 100%;
     height: 7px;
@@ -517,6 +520,14 @@ footer .in-footer hr {
         margin-left: 30px;
     }
 
+    #second-screen .text-content .inputs .select {
+        width: 24vw;
+    }
+
+    #second-screen .text-content .inputs .in-input input{
+        width: 24vw;
+    }
+
     #second-screen .text-content .range_and_file .file label{
         padding: 10px 3vw 10px 3vw;
     }
@@ -551,12 +562,12 @@ footer .in-footer hr {
     }
 
     #second-screen {
-        background: url(../img/second-screen.jpg)  no-repeat;
         background-size: cover;
         height: 1062px;
     }
 
     #second-screen .text-content .row-and-text{
+        margin-top: 30px;
         height: 500px;
         display: flex;  
         justify-content: center;
@@ -598,7 +609,7 @@ footer .in-footer hr {
         align-items: center;
     }
 
-    #second-screen .text-content .inputs .in-input select, input{
+    #second-screen .text-content .inputs .in-input input{
         width: 70vw;
         margin-top: 7px;
     }
