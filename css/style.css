@@ -246,6 +246,10 @@
     width: 40px;
 }
 
+.inputs__select-icon p {
+    margin-top: 9px;
+}
+
 .inputs__select-icon i {
     border: solid white;
     border-width: 0 3px 3px 0;
