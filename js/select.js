@@ -1,4 +1,4 @@
-select();
+document.addEventListener("DOMContentLoaded", select);
 
 function select() {
   let  selectHeader = document.querySelectorAll('.inputs__select-header');

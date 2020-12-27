@@ -828,3 +828,59 @@
     }
 
 }
+
+@media only screen and (min-width:1920px){
+
+    .header,
+    .footer {
+        position: relative;
+        width: 1920px;
+        float: revert;
+        margin: 0 auto;
+    }
+
+
+    .container{
+        width: 1170px;
+    }
+
+    .content-offer_inner {
+        max-height: 470px;
+    }
+
+    .content-offer__item{
+        margin-bottom: 20px;
+    }
+
+    .content-offer__subtitle{
+        margin: 80px 0 25px 0;
+    }
+
+    .content-offer__items{
+        margin-bottom: 80px;
+    }
+
+    .inputs__input{
+        width: 371px;
+        margin-top: 7px;
+    }
+
+    .input__input-error {
+        max-width: 371px;
+    }
+
+    .inputs__select{
+        width: 371px;
+    }
+
+    .content-range__file-label {
+        width: 371px;
+    }
+
+    .button-blue {
+        width: 371px;
+    }
+
+
+
+}
