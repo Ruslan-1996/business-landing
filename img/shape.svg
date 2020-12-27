@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 43" width="38" height="43">
+	<defs>
+		<image width="38" height="43" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAArCAMAAAAjfQpCAAAAAXNSR0IB2cksfwAAADxQTFRFAAAA////////////////////////PZvb////////////////////////////////////////////////N5KIigAAABR0Uk5TAB0jivj/gP/umSJm+3fduxFEM1VdKkEfAAAAuUlEQVR4nO3TSRKDIBAFUAS+oojG5P53jVOwQRuoDLv8JfWqoAeE2FJVIhupNKCVTKsae+qsapqMkzgY+HsVZYplmjLNqWohryCIabsSNsdeX9o7H2CgjisBcJY4riEzE9Qx7V3Y2Z2GsLLAraPvo9FvLHD+8MxW1+XZ4toUG/cODjA8M3QaPLOmiB1x77KbC8OwKVqk6Zrdo8XsPnrbd1nh2worLezbv4RfsdFxGQ82IBX/Tx8mpewTmO8ThwD8WmAAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Прямоугольник 17 копия" href="#img1" x="0" y="0" />
+</svg>

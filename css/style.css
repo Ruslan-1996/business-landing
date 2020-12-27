@@ -8,59 +8,65 @@
     background: #7ad7ff;
    }
 
-.width-content  {
+.title_color-blue{
+    color: #009DDF;
+}
+
+.container {
     width: 60%;
 }
 
-#first-screen {
+.wrapper-first {
     background: url(../img/first-screen.jpg) no-repeat center;
     float: left;
     width: 100%;
     height: 672px;
 }
 
-#first-screen header{
+.header{
     background-color: rgba(10, 10, 24, 0.85);
     width: 100%;
     height: 60px;
     display: flex;
     justify-content: center;
+    position: fixed;
+    z-index: 5;
 }
 
-#first-screen header .in-header{
+.header__container{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-
-#first-screen header .in-header .logo h2 {
+.header__logo-wrap {
     color: white;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
-#first-screen header .in-header .logo h2 .color-text{
+.header__logo-wrap_text-blue{
     color: #009DDF;
 }
 
-#first-screen header .in-header .about-us a{
+.header__burger{
+    display: none;
+}
+
+.header__nav-item{
     margin-left: 40px;
     text-transform: uppercase;
     font-size: 0.8em;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
 }
 
-#first-screen header .in-header .about-us .end-about-us{
-    margin-left: 0;
+.header__nav-item:hover{
+    color: #009DDF;
 }
 
-
-#first-screen header .in-header .about-us a:hover{
-    color: #009DDF;
-} 
-
-#first-screen #content {
+.content-offer {
     width: 100%;
     height: 612px;
     display: flex;
@@ -68,33 +74,30 @@
     align-items: center;
 }
 
-#first-screen #content .text-content h1 {
-    
-    color: #009DDF;
+.content-offer__title{
+    margin-top: 60px;
+    max-width: 520px;
+    color: rgb(10, 10, 24);
     text-transform: uppercase;
 }
 
-#first-screen #content .text-content h1 .color-text{
-    color:rgb(10, 10, 24);
-}
-
-#first-screen #content .text-content p {
+.content-offer__subtitle {
     margin: 8vh 0 1vh 0;
     color:rgb(10, 10, 24);
     font-weight: bold;
 }
 
-#first-screen #content .text-content ul{
+.content-offer__items{
     margin-bottom: 8vh;
 }
 
-#first-screen #content .text-content ul li {
+.content-offer__item {
     margin-bottom: 1vh;
     color:rgb(10, 10, 24);
     list-style-type: none;
 }
 
-#first-screen #content .text-content button{
+.content-offer__button{
     height: 32px;
     width: 186px;
     border-radius: 3px;
@@ -102,28 +105,28 @@
     text-transform: uppercase;
 }
 
-#first-screen #content .text-content .button-blue {
+.content-offer__button_button-blue {
     border: 1px solid white;
     background-color: #009DDF;
     color: white;
     margin-right: 30px;
 }
 
-#first-screen #content .text-content .button-blue:active{
+.content-offer__button_button-blue:active{
     background-color:#006693;
 }
 
-#first-screen #content .text-content .button-white {
+.content-offer__button_button-white {
     border: 1px solid rgb(10, 10, 24);
     background-color: white;
     color: rgb(10, 10, 24);
 }
 
-#first-screen #content .text-content .button-white:active{
+.content-offer__button_button-white:active{
     background-color: #B8B8BD;
 }
 
-#second-screen {
+.wrapper-second {
     background: url(../img/second-screen.jpg) no-repeat center;
     width: 100%;
     height: 672px;
@@ -132,24 +135,21 @@
     align-items: center;
 }
 
-#second-screen .text-content h1{
+.content-ordering__title{
     text-align: center;
     text-transform: uppercase;
     color: white;
-    font-weight: 550;
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
-#second-screen .text-content h1 .text-blue {
-    color: #009DDF;
-}
-
-#second-screen .text-content p {
+.content-ordering__text {
     text-align: center;
     color: #B8B8BD;
     margin-top: 10px;
 }
 
-#second-screen .text-content .row {
+.row-main {
     display: flex;
     justify-content: space-between;
     width: 95%;
@@ -158,7 +158,20 @@
     margin-left: 2.5%;
 }
 
-#second-screen .text-content .row .circle{
+.row__instruction-order {
+    display: flex;
+    justify-content: center;
+}
+
+.row__text {
+    position: absolute;
+    max-width: 150px;
+    margin-top: 100px;
+    text-align: center;
+    color: #B8B8BD;
+}
+
+.row__circle {
     height: 80px;
     width: 80px;
     background-color: #009DDF;
@@ -167,42 +180,18 @@
     display: flex;
 }
 
-#second-screen .text-content .row .circle p {
+.row__image {
     margin: auto;
     font-size: 2em;
     font-weight: bold;
     color: white;
 }
 
-#second-screen .text-content .row .circle .dollar {
-    height: 20px;
-    width: 35px;
-    border: 3px solid white;
-    margin: auto;
-    display: flex;
+.row__circle img {
+    height: 1em;
 }
 
-#second-screen .text-content .row .circle .dollar p {
-    margin: auto;
-    background-color: white;
-    height: 14px;
-    width: 10px;
-    font-size: 12px;
-    color: #009DDF;
-    font-weight: bold;
-    border-radius: 3px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-#second-screen .text-content .row .circle img {
-    height: 1.2em;
-}
-
-#second-screen .text-content .row .circle .post{
-    font-size: 2.5em;
-}
-
-#second-screen .text-content .row .small-circle {
+.row__small-circle {
     height: 5px;
     width: 5px;
     color: #B8B8BD;
@@ -211,50 +200,43 @@
     margin: auto;
 }
 
-#second-screen .text-content .text-row {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    float: left;
-    
-}
-
-#second-screen .text-content .text-row .text-under-row p {
-    color: white;
-    margin-bottom: -5px;
-}
-
-#second-screen .text-content .inputs {
-    margin-top: 55px;
+.inputs {
+    margin-top: 80px;
     display: flex;
     justify-content: space-between;
     width: 100%;
     float: left;
 }
 
-#second-screen .text-content .inputs .select {
+.inputs__select{
     width: 18.5vw;
     margin: 0 auto;
     position: relative;
 }
 
-#second-screen .text-content .inputs .select.is-active .select-body {
+.inputs__select.is-active .inputs__select-body{
     display: none;
 }
 
-#second-screen .text-content .inputs .select-header {
+.inputs__select-header {
     display: flex;
     background-color: #393E50;
     color: white;
     cursor: pointer;
+    text-align: center;
 }
 
-#second-screen .text-content .inputs .select-current {
+.inputs__select-current {
     line-height: 24px;
     padding: 8px;
+    white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden; /* Обрезаем все, что не помещается в область */
+
+    text-overflow: ellipsis; /* Добавляем многоточие */
+
 }
 
-#second-screen .text-content .inputs .select-icon {
+.inputs__select-icon {
     display: flex;
     flex-shrink: 0;
     justify-content: center;
@@ -264,7 +246,7 @@
     width: 40px;
 }
 
-#second-screen .text-content .inputs .select-icon i {
+.inputs__select-icon i {
     border: solid white;
     border-width: 0 3px 3px 0;
     display: inline-block;
@@ -272,12 +254,12 @@
     border-radius: 2px;
 }
 
-#second-screen .text-content .inputs .select-icon .arrow-down {
+.arrow-down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
 
-#second-screen .text-content .inputs .select-body {
+.inputs__select-body{
     border: 1px solid black;
     border-top: 0;
     left: 0;
@@ -287,69 +269,70 @@
     display: block;
 }
 
-#second-screen .text-content .inputs .select-item {
+.inputs__select-item {
     padding: 8px;
     cursor: pointer;
     background-color: rgba(10, 10, 24, 0.85);
     color: white;
 }
 
-#second-screen .text-content .inputs .select-item:hover {
+.inputs__select-item:hover {
     color: #009DDF;
 }
 
-#second-screen .text-content .inputs .in-input input{
+.inputs__input{
     width: 18.5vw;
     height: 40px;
     border-radius: 3px;
 }
 
-#second-screen .text-content .inputs .in-input input {
+.inputs__input {
     background-color: #B8B8BD;
     color: rgb(10, 10, 24);
     outline: none;
+    border: 1px solid white;
     padding-left: 10px;
     box-sizing: border-box;
 }
 
-#second-screen .text-content .input-error {
-    width: 100%;
+.input__input-error {
+    text-align: start;
     display: flex;
-    justify-content: flex-end;
-}
-
-#second-screen .text-content .input-error p{
+    justify-content: center;
     color:red;
+    font-size: 0.8em;
+    margin-top: 7px;
+    max-width: 18.5vw;
 }
 
-#second-screen .text-content .range_and_file{
+.content-range{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-#second-screen .text-content .range_and_file .range{
+.content-range__main{
     width: 65.8%;
     float: left;
 }
 
-#second-screen .text-content .range_and_file .range .text-on-range{
+.content-range__text{
     margin-top: 20px;
     width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-#second-screen .text-content .range_and_file .range .text-on-range p {
+.content-range__text p {
     color: white;
 }
 
-#second-screen .text-content .range_and_file .range .text-on-range .interest{
+.content-range__interest{
     display: flex;
 }
 
-#second-screen .text-content .range_and_file .range input{
+.content-range__range{
     -webkit-appearance: none;
     background-color: #B8B8BD;
     border: 1px solid white;
@@ -360,8 +343,7 @@
     cursor: pointer;
 }
 
-
-#second-screen .text-content .range_and_file .range input::-webkit-slider-thumb{
+.content-range__range::-webkit-slider-thumb{
     -webkit-appearance: none;
     background-color: #009DDF;
     border: 3px solid #006693;
@@ -371,14 +353,14 @@
     transition: 0.25s;
 }
 
-#second-screen .text-content .range_and_file .range input::-webkit-slider-thumb:hover, 
-#second-screen .text-content .range_and_file .range input::-webkit-slider-thumb:active{
+.content-range__range::-webkit-slider-thumb:hover,
+.content-range__range::-webkit-slider-thumb:active{
     width: 22px;
     height: 22px;
     border: 4px solid #006693;
 }
 
-#second-screen .text-content .range_and_file .range input::-moz-range-track{
+.content-range__range::-moz-range-track{
     -moz-appearance: none;
     background-color: #B8B8BD;
     border: 1px solid white;
@@ -389,7 +371,7 @@
     cursor: pointer;
 }
 
-#second-screen .text-content .range_and_file .range input::-moz-range-thumb{
+.content-range__range::-moz-range-thumb{
     -moz-appearance: none;
     background-color: #009DDF;
     border: 3px solid #006693;
@@ -399,14 +381,21 @@
     transition: 0.25s;
 }
 
-#second-screen .text-content .range_and_file .range input::-moz-range-thumb:hover, 
-#second-screen .text-content .range_and_file .range input::-moz-range-thumb:active{
+.content-range__range::-moz-range-thumb:hover,
+.content-range__range::-moz-range-thumb:active{
     width: 16px;
     height: 16px;
     border: 4px solid #006693;
 }
 
-#second-screen .text-content .range_and_file .file #file {
+.content-range__file {
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.content-range__file-main {
     width: 0.1px;
     height: 0.1px;
     opacity: 0;
@@ -415,29 +404,51 @@
     z-index: -1;
 }
 
-#second-screen .text-content .range_and_file .file label{
-    padding: 10px 3.5vw 10px 3.5vw;
-    color: rgb(10, 10, 24);
+.content-range__file-label {
+    white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden; /* Обрезаем все, что не помещается в область */
+    text-overflow: ellipsis; /* Добавляем многоточие */
+}
+
+.content-range__file-label{
+    box-sizing: border-box;
+    border: 2px solid #3E9CDC;
+    display: inline-block;
+    width: 18.5vw;
+    padding: 10px 0 10px 0;
+    border-radius: 5px;
     background-color: #B8B8BD;
-    border: 1px solid rgb(10, 10, 24);
-    border-radius: 3px;
-    cursor: pointer;
-    outline: none;
-    text-transform: uppercase;
+    font-family: "Lato", sans-serif;
+    font-size: 0.9em;
+    color: black;
+    font-weight: normal;
 }
 
-#second-screen .text-content .range_and_file .file label img{
+.fake-button-text {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.content-range__file-img{
+    margin-right: 20px;
+}
+
+.content-range__file-label img{
     height: 1em;
+    position: absolute;
 }
 
-#second-screen .text-content .button {
+.content-ordering__button {
     margin-top: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
-#second-screen .text-content .button button {
+.button-blue {
     width: 18.5vw;
     height: 40px;
     background-color: #009DDF;
@@ -452,7 +463,7 @@
     background-color:#006693;
 }
 
-footer {
+.footer {
     background-color: #393E50;
     float: left;
     height: 60px;
@@ -463,109 +474,201 @@ footer {
     justify-content: center;
 }
 
-footer .in-footer {
+.footer__main {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-footer .in-footer p {
+.footer__main p {
     float: left;
     margin-right: 25px;
     color: #B8B8BD;
 }
 
-footer .in-footer .name-site .big-string {
-    text-transform: uppercase;
-}
-
-footer .in-footer .name-site {
+.footer__name-site {
     color: white;
 }
 
-footer img {
+.footer__name-site_big-string {
+    text-transform: uppercase;
+}
+
+.footer img {
     height: 0.8em;
 }
 
-footer .in-footer .logo-post {
+.footer__logo-post {
     color: #009DDF;
 }
 
-footer .in-footer p .logo-VK {
-    color: #009DDF;
-    font-size: 1.2em;
-    font-weight: bold;
-} 
-
-footer .in-footer .vk {
+.footer__VK {
     margin-right: 0;
 }
 
-footer .in-footer hr {
+.footer__VK_logo {
+    color: #009DDF;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.footer__main hr {
     display: none;
 }
 
 @media only screen and (max-width:1225px){
   
-    .width-content{
+    .container{
         width: 80%;
     }
 
-    #first-screen header .in-header .about-us a{
+    .header__nav-item{
         margin-left: 30px;
     }
 
-    #second-screen .text-content .inputs .select {
+    .inputs__select {
         width: 24vw;
     }
 
-    #second-screen .text-content .inputs .in-input input{
+    .inputs__input{
         width: 24vw;
     }
 
-    #second-screen .text-content .range_and_file .file label{
-        padding: 10px 3vw 10px 3vw;
+    .input__input-error {
+        max-width: 24vw;
     }
 
-    #second-screen .text-content .button button {
+    .content-range__file-label{
         width: 24vw;
     }
 
-    footer .in-footer {
-        width: 80%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .button-blue {
+        width: 24vw;
     }
-    
+}
+
+@media only screen and (max-width:1025px){
+    .row__text {
+        max-width: 120px;
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+    }
 }
 
 @media only screen and (max-width:769px){
 
-    #first-screen header{
-        height: 100px;
+    body.lock {
+        overflow: hidden;
+    }
+
+    .header.active {
+        background-color: rgb(10, 10, 24);
+    }
+
+    .header{
         align-items: center;
+        position: fixed;
+        z-index: 2;
     }
 
-    #first-screen header .in-header{
+    .header__logo{
+        position: fixed;
+        z-index: 3;
+    }
+
+    .header__container{
         width: 90%;
+    }
+
+    /*Burger menu*/
+
+    .header__burger{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        margin-left: 95%;
+    }
+
+    .header__burger.active:before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    .header__burger.active:after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    .header__burger.active span {
+        transform: scale(0);
+    }
+
+    .header__burger:before,
+    .header__burger:after {
+       content: '';
+        background-color: white;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        z-index: 3;
+        transition: 0.3s;
+    }
+
+    .header__burger span {
+        position: absolute;
+        background-color: white;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        z-index: 3;
+    }
+
+    .header__burger:before {
+        top: 0;
+    }
+
+    .header__burger:after {
+        bottom: 0;
+    }
+
+    .header__nav{
+        position: fixed;
+        right: -100%;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #393E50;
+        margin-top: 60px;
+        display: flex;
         flex-direction: column;
+        transition: 0.3s;
+        overflow: auto;
     }
 
-    #first-screen header .in-header .about-us{
-        margin-top: 10px;
+    .header__nav.active {
+        right: 0;
+        top: 0;
     }
 
-    #first-screen #content .text-content .button-blue {
+    .header__nav-item {
+        margin: 30px 0 0 5%;
+        font-size: 1.2em;
+    }
+
+    .content-offer__button_button-blue{
         margin-bottom: 10px;
     }
 
-    #second-screen {
+    .wrapper-second {
         background-size: cover;
         height: 1062px;
     }
 
-    #second-screen .text-content .row-and-text{
+    .row{
         margin-top: 30px;
         height: 500px;
         display: flex;  
@@ -573,91 +676,90 @@ footer .in-footer hr {
         
     }
 
-    #second-screen .text-content .row-and-text .row{
+    .row-main{
         display: flex;
         flex-direction: column;
         margin-top: 0;
-        max-width: 90px;
-    }
-
-    #second-screen .text-content .row-and-text .text-row{
-        display: flex;
-        flex-direction: column;
         max-width: 250px;
     }
 
-    #second-screen .text-content .row .small-circle{
+    .row__instruction-order {
+        display: flex;
+       justify-content: space-between;
+    align-items: center;
+    }
+
+    .row__text {
+        position: relative;
+        max-width: 150px;
+        margin-top: 0;
+    }
+
+    .row__small-circle{
         display: none;
     }
 
-    #second-screen .text-content .row-and-text .text-row .text-under-row-first {
-        margin-top: 20px;
-    }
-
-    #second-screen .text-content .row-and-text .text-row .text-under-row-end {
-        margin-bottom: 20px;
-    }
-
-    #second-screen .text-content .inputs .select {
+    .inputs__select {
         width: 70vw;
     }
 
-    #second-screen .text-content .inputs {
+    .inputs {
         margin-top: 48px;
         flex-direction: column;
         align-items: center;
     }
 
-    #second-screen .text-content .inputs .in-input input{
+    .inputs__input{
         width: 70vw;
         margin-top: 7px;
     }
 
-    #second-screen .text-content .range_and_file .range .text-on-range-width{
-        width: 200px;
+    .input__input-error {
+        max-width: 70vw;
     }
 
-    #second-screen .text-content .range_and_file{
+    .content-range{
         flex-direction: column;
     }
 
-    #second-screen .text-content .range_and_file .range{
+    .content-range__main{
         width: 70vw;
         float: left;
-        margin-bottom: 15px;
+        margin: 7px 0 15px 0;
+
     }
 
-    #second-screen .text-content .range_and_file .file label{
-        padding: 10px 23.5vw 10px 23.5vw;
-    }
-
-    #second-screen .text-content .button button {
+    .content-range__file-label{
         width: 70vw;
     }
 
-    #second-screen .text-content .range_and_file .range .text-on-range{
+    .button-blue {
+        width: 70vw;
+    }
+
+    .content-range__text{
         margin: 0;
     }
 
-    #second-screen .text-content .input-error {
+    .input__input-error {
         justify-content: center;
     }
 
-    footer{
+    .footer{
         height: 140px;
     }
 
-    footer .in-footer {
+    .footer__main {
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
     }
 
-    footer .in-footer .footer-line{
+    .footer__line{
         display: none;
     }
 
-    footer .in-footer hr{
+    .footer hr{
         display: block;
         border: none;
         height: 1px;
@@ -668,50 +770,60 @@ footer .in-footer hr {
 }
 
 @media only screen and (max-width:513px){
-    #first-screen #content .text-content p {
+    .header__burger {
+        margin-left: 90%;
+    }
+
+
+
+    .content-offer__subtitle {
         margin: 4vh 0 1vh 0;
     }
 
-    #first-screen #content .text-content ul{
+    .content-offer__items{
         margin-bottom: 4vh;
     }
 
-    #second-screen .text-content .range_and_file .file label{
+    .content-range__file-label{
         padding: 10px 17vw 10px 17vw;
+    }
+
+    .content-range__text_width{
+        width: 200px;
     }
 }
 
 @media only screen and (max-width:455px){
-    #second-screen .text-content .range_and_file .file label{
+    .content-range__file-label{
         padding: 10px 15.5vw 10px 15.5vw;
     }
 }
 
 @media only screen and (max-width:415px){
-    #second-screen .text-content .range_and_file .file label{
+    .content-range__file-label{
         padding: 10px 13.5vw 10px 13.5vw;
     }
 }
 
 @media only screen and (max-width:400px){
 
-    #first-screen header .in-header .about-us{
-        max-width: 200px;
+    .wrapper-second {
+        height: 1150px;
     }
 
-    #first-screen #content .text-content p {
+    .content-offer__subtitle {
         margin: 3vh 0 1vh 0;
     }
 
-    #first-screen #content .text-content ul{
+    .content-offer__items{
         margin-bottom: 3vh;
     }
 
-    #second-screen .text-content .range_and_file .file label{
+    .content-range__file-label{
         padding: 10px 7.5vw 10px 7.5vw;
     }
 
-    #second-screen .text-content .input-error {
+    .input__input-error {
         display: flex;
         justify-content: center;
         width: 70%;

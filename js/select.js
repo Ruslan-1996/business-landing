@@ -1,8 +1,8 @@
 select();
 
 function select() {
-  let  selectHeader = document.querySelectorAll('.select-header');
-  let  selectItem = document.querySelectorAll('.select-item');
+  let  selectHeader = document.querySelectorAll('.inputs__select-header');
+  let  selectItem = document.querySelectorAll('.inputs__select-item');
 
   selectHeader.forEach(item => {
     item.addEventListener('click', selectRemove)
@@ -18,8 +18,8 @@ function select() {
 
   function selectChoose() {
     let text = this.innerText;
-    let select = this.closest('.select');
-    let currentText = select.querySelector('.select-current');
+    let select = this.closest('.inputs__select');
+    let currentText = select.querySelector('.inputs__select-current');
     currentText.innerText = text;
     select.classList.toggle('is-active');
   };
