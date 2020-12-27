@@ -827,10 +827,4 @@
         padding: 10px 7.5vw 10px 7.5vw;
     }
 
-    .input__input-error {
-        display: flex;
-        justify-content: center;
-        width: 70%;
-        margin-left: 10%;
-    }
 }
