@@ -3,8 +3,11 @@ function ready() {
     let fakeButton = document.getElementById('fake-button');
 
     input.addEventListener('change', function (e) {
-        console.log(e.srcElement.value);
-        fakeButton.innerHTML = e.srcElement.value;
+        if (e.srcElement.value != "") {
+            console.log(e.srcElement.value);
+            fakeButton.innerHTML = e.srcElement.value.slice(12);
+            console.log(fakeButton.innerHTML.slice(12));
+        }
     })
 }
 
