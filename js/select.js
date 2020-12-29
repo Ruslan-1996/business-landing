@@ -18,7 +18,6 @@ function inputSelect () {
       this.classList.toggle('is-active');
       selectCurrent.innerHTML = e.target.innerHTML;
     }
-    console.log(e.target.classList);
   }
 
   document.querySelector('.arrow-down').onclick = function (e) {
