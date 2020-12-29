@@ -246,19 +246,20 @@
     width: 40px;
 }
 
-.inputs__select-icon p {
-    margin-top: 9px;
-}
-
 .inputs__select-icon i {
+    margin-top: 17px;
     border: solid white;
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
     border-radius: 2px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transition: 0.3s;
 }
 
-.arrow-down {
+.is-active .inputs__select-icon i {
+    margin-top: 15px;
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }

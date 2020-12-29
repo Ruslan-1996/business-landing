@@ -1,26 +1,29 @@
-document.addEventListener("DOMContentLoaded", select);
+function inputSelect () {
+  let select = document.querySelector('.inputs__select');
+  let body = document.querySelector('body');
 
-function select() {
-  let  selectHeader = document.querySelectorAll('.inputs__select-header');
-  let  selectItem = document.querySelectorAll('.inputs__select-item');
+  body.onclick = function (e) {
+    select.classList.add('is-active');
+  }
 
-  selectHeader.forEach(item => {
-    item.addEventListener('click', selectRemove)
-  });
+  select.onclick = function (e) {
+    let selectCurrent = document.querySelector('.inputs__select-current');
+    if (e.target.className === 'inputs__select-current' || e.target.className === 'inputs__select-icon' ||
+        e.target.className === 'inputs__select-header' || e.target.className === 'inputs__select-body') {
+      e.stopPropagation();
+      this.classList.toggle('is-active');
+    } else {
+      e.stopPropagation();
+      this.classList.toggle('is-active');
+      selectCurrent.innerHTML = e.target.innerHTML;
+    }
+    console.log(e.target.classList);
+  }
 
-  selectItem.forEach(item => {
-    item.addEventListener('click', selectChoose)
-  });
-
-  function selectRemove() {
-    this.parentElement.classList.remove('is-active');
-  };
-
-  function selectChoose() {
-    let text = this.innerText;
-    let select = this.closest('.inputs__select');
-    let currentText = select.querySelector('.inputs__select-current');
-    currentText.innerText = text;
+  document.querySelector('.arrow-down').onclick = function (e) {
+    e.stopPropagation();
     select.classList.toggle('is-active');
-  };
-};
+  }
+}
+
+document.addEventListener("DOMContentLoaded", inputSelect);
