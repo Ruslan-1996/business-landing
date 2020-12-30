@@ -231,9 +231,7 @@
     padding: 8px;
     white-space: nowrap; /* Запрещаем перенос строк */
     overflow: hidden; /* Обрезаем все, что не помещается в область */
-
     text-overflow: ellipsis; /* Добавляем многоточие */
-
 }
 
 .inputs__select-icon {
@@ -272,6 +270,7 @@
     right: 0;
     top: 100%;
     display: block;
+    z-index: 3;
 }
 
 .inputs__select-item {
@@ -304,10 +303,14 @@
     text-align: start;
     display: flex;
     justify-content: center;
-    color:red;
+    color: #B8B8BD;
     font-size: 0.8em;
     margin-top: 7px;
     max-width: 18.5vw;
+}
+
+.input-input-error--red {
+    color: red;
 }
 
 .content-range{
@@ -343,7 +346,7 @@
     border: 1px solid white;
     border-radius: 100px;
     width: 100%;
-    height: 7px;
+    height: 4px;
     outline: none;
     cursor: pointer;
 }
@@ -356,6 +359,8 @@
     width: 20px;
     height: 20px;
     transition: 0.25s;
+    position: relative;
+    z-index: 2;
 }
 
 .content-range__range::-webkit-slider-thumb:hover,
@@ -393,6 +398,17 @@
     border: 4px solid #006693;
 }
 
+.content-range__line-range {
+    position: relative;
+    bottom: 8.7px;
+    height: 4.2px;
+    background-color: #009DDF;
+    width: 0;
+    border-radius: 1000px;
+    left: 1.2px;
+    z-index: 1;
+}
+
 .content-range__file {
     position: relative;
     text-align: center;
@@ -409,24 +425,19 @@
     z-index: -1;
 }
 
-.content-range__file-label {
-    white-space: nowrap; /* Запрещаем перенос строк */
-    overflow: hidden; /* Обрезаем все, что не помещается в область */
-    text-overflow: ellipsis; /* Добавляем многоточие */
-}
-
 .content-range__file-label{
     box-sizing: border-box;
     border: 2px solid #3E9CDC;
     display: inline-block;
     width: 18.5vw;
-    padding: 10px 0 10px 0;
+    padding: 10px;
     border-radius: 5px;
     background-color: #B8B8BD;
-    font-family: "Lato", sans-serif;
     font-size: 0.9em;
-    color: black;
     font-weight: normal;
+    white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden; /* Обрезаем все, что не помещается в область */
+    text-overflow: ellipsis; /* Добавляем многоточие */
 }
 
 .fake-button-text {
@@ -447,13 +458,10 @@
 }
 
 .content-ordering__button {
-    margin-top: 20px;
-    width: 100%;
+    margin: 20px auto 0 auto;
     display: flex;
     justify-content: center;
-}
-
-.button-blue {
+    align-items: center;
     width: 18.5vw;
     height: 40px;
     background-color: #009DDF;
@@ -463,6 +471,8 @@
     font-size: 0.8em;
     outline: none;
 }
+
+
 
 #second-screen .text-content .button button:active{
     background-color:#006693;
@@ -547,18 +557,25 @@
         width: 24vw;
     }
 
-    .button-blue {
+    .content-ordering__button {
         width: 24vw;
     }
+
 }
 
 @media only screen and (max-width:1025px){
+
     .row__text {
         max-width: 120px;
         -moz-hyphens: auto;
         -webkit-hyphens: auto;
         -ms-hyphens: auto;
     }
+
+    .inputs {
+        margin-top: 100px;
+    }
+
 }
 
 @media only screen and (max-width:769px){
@@ -738,7 +755,7 @@
         width: 70vw;
     }
 
-    .button-blue {
+    .content-ordering__button {
         width: 70vw;
     }
 
@@ -772,6 +789,7 @@
         background-color: #B8B8BD;
         margin: 5px 0 5px 0;
     }
+
 }
 
 @media only screen and (max-width:513px){
@@ -795,24 +813,8 @@
         margin-bottom: 40px;
     }
 
-    .content-range__file-label{
-        padding: 10px 17vw 10px 17vw;
-    }
-
     .content-range__text_width{
         width: 200px;
-    }
-}
-
-@media only screen and (max-width:455px){
-    .content-range__file-label{
-        padding: 10px 15.5vw 10px 15.5vw;
-    }
-}
-
-@media only screen and (max-width:415px){
-    .content-range__file-label{
-        padding: 10px 13.5vw 10px 13.5vw;
     }
 }
 
@@ -822,22 +824,9 @@
         height: 1150px;
     }
 
-    .content-range__file-label{
-        padding: 10px 7.5vw 10px 7.5vw;
-    }
-
 }
 
 @media only screen and (min-width:1920px){
-
-    .header,
-    .footer {
-        position: relative;
-        width: 1920px;
-        float: revert;
-        margin: 0 auto;
-    }
-
 
     .container{
         width: 1170px;
@@ -861,7 +850,6 @@
 
     .inputs__input{
         width: 371px;
-        margin-top: 7px;
     }
 
     .input__input-error {
@@ -876,10 +864,8 @@
         width: 371px;
     }
 
-    .button-blue {
+    .content-ordering__button {
         width: 371px;
     }
-
-
 
 }

@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", inputSelect);
 
 function inputSelect() {
+
     const select = document.querySelector('.inputs__select');
     const body = document.querySelector('body');
     const selectCurrent = document.querySelector('.inputs__select-current');
@@ -20,4 +21,5 @@ function inputSelect() {
         select.classList.toggle('is-active');
         selectCurrent.innerHTML = e.target.innerHTML;
     }
+
 }
