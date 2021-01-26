@@ -1,11 +1,11 @@
 let inputRange = document.getElementById('range');
 let textOnRange = document.getElementById('interest');
 let inputEmail = document.getElementById('email');
-let inputName = document.getElementById('name')
-let inputError = document.getElementById('input-error')
+let inputName = document.getElementById('name');
+let inputError = document.getElementById('input-error');
 let buttonSend = document.getElementById('button-send');
 const mailReg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-const nameReg = /[A-Za-zA-Яа-яЁё]/;
+const nameReg = /^[а-яА-ЯёЁa-zA-Z0-9]+$/;
 
 textOnRange.innerHTML = inputRange.value;
 
