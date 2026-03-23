@@ -7,7 +7,7 @@ on:
 
 jobs:
   copy-files:
-    runs-on: [self-hosted, test-runner]
+    runs-on: [self-hosted, bussiness-landing]
 
     steps:
       - name: Checkout repository
